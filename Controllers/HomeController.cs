@@ -4,7 +4,7 @@ namespace MvcApp.Controllers
 {
 	public class HomeController : Controller
 	{
-		public IActionResult Index() => View();
-		public IActionResult About() => View();
+		public string Index(int id) => $"Index Page. Id:{id}";
+		public string About(string name, int age)=>$"About page. Name:{name}, Age:{age}";
 	}
 }

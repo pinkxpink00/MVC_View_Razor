@@ -6,9 +6,8 @@ var app = builder.Build();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
+    pattern: "{controller}/{action}/{id}");
 app.MapControllerRoute(
-    name: "product",
-    pattern: "{controller=Products}/{action=Product}/{id?}");
+    name:"name_age",
+    pattern:"{controller}/{action}/{name}/{age}");
 app.Run();
