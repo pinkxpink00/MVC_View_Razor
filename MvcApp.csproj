@@ -7,4 +7,11 @@
     <UserSecretsId>5ee9f689-5f64-4b6b-b11d-6c5afb38b634</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <Content Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
 </Project>
